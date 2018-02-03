@@ -1,26 +1,28 @@
 *{
   font-family: "Open Sans";
-
 }
 
 body{
   width: 100%;
   height: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-
-
 
 main {
   background-color: #455a64;
-  width:  49%;
+  width:  50%;
   height: 100%;
   text-align: center;
-
+  display: inline-block;
+  float: left;
 }
 
 section{
   height: 100vh;
-  width: 80%;
+  width: 90%;
   margin: auto;
   display: inline-block;
 }
@@ -31,6 +33,7 @@ section{
 }
 
 #list-area {
-  width: 49%
-
+  width: 50%;
+  background-color: #CFD8DC;
+  vertical-align: top;
 }
