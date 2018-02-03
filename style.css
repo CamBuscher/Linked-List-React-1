@@ -14,7 +14,6 @@ body{
 main {
   background-color: #455a64;
   width:  50%;
-  height: 100%;
   text-align: center;
   display: inline-block;
   float: left;
@@ -25,11 +24,34 @@ section{
   width: 90%;
   margin: auto;
   display: inline-block;
+  vertical-align: middle;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 60px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 90%;
+  height: 35px;
+  margin-bottom: 30px;
+  border: none;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+input::placeholder {
+  color: #BBBDBF;
 }
 
 .logo {
-    height: 150px;
-    width: 150px;
+    height: 75px;
+    width: 75px;
+    vertical-align: middle;
+    margin-top: -5px;
 }
 
 #list-area {
