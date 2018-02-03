@@ -80,24 +80,32 @@ hr {
 
 .read-button {
   border: none;
-  color: #455864;
+  color: #455A64;
   text-decoration: underline;
   text-decoration-color: #F2F4F4;
   padding-left: 0px;
   padding-bottom: 0px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .delete-button {
   border: none;
-  color: #455864;
+  color: #455A64;
   text-decoration: underline;
   text-decoration-color: #F2F4F4;
   padding-right: 0px;
   padding-bottom: 0px;
-  font-size: 12px;
+  font-size: 14px;
   float: right;
 }
+
+.link-list {
+  color: #607d8b;
+  text-decoration: underline;
+  text-decoration-color: #F2F4F4;
+  font-size: 22px;
+}
+
 
 #list-area {
   width: 50%;
@@ -105,7 +113,7 @@ hr {
   vertical-align: top;
 }
 
-#enter-button{
+#enter-button {
 width: 92%;
 color: #FFFFFF; 
 background-color: #FFC107;
@@ -115,9 +123,22 @@ font-weight: 800;
 font-size: 17px;
 }
 
-#main-form{
+#main-form {
   height:301px;
   margin-top: 50%;
 }
 
+
+.read-button:hover {
+font-weight: 800;
+text-decoration-color: #FFC107;
+}
+
+.delete-button:hover {
+text-decoration-color: #FFC107;
+}
+
+.link-list:hover {
+font-weight: 800;
+text-decoration-color: #FFC107;
 
