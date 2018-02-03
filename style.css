@@ -34,6 +34,13 @@ h1 {
   margin-bottom: 30px;
 }
 
+h2 {
+  color: #455A64;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
 input {
   width: 90%;
   height: 35px;
@@ -45,13 +52,51 @@ input {
 
 input::placeholder {
   color: #BBBDBF;
+
+}
+
+hr {
+  background: #CFD8DC;
+  height: 1px;
+  border: 0px;
 }
 
 .logo {
-    height: 75px;
-    width: 75px;
-    vertical-align: middle;
-    margin-top: -5px;
+  height: 75px;
+  width: 75px;
+  vertical-align: middle;
+  margin-top: -5px;
+}
+
+.list-item {
+  width: 90%;
+  background-color: #fff;
+  border: solid 1.5px #607D8B;
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 15px;
+}
+
+.read-button {
+  border: none;
+  color: #455864;
+  text-decoration: underline;
+  text-decoration-color: #F2F4F4;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  font-size: 12px;
+}
+
+.delete-button {
+  border: none;
+  color: #455864;
+  text-decoration: underline;
+  text-decoration-color: #F2F4F4;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  font-size: 12px;
+  float: right;
 }
 
 #list-area {
@@ -74,3 +119,5 @@ font-size: 17px;
   height:301px;
   margin-top: 50%;
 }
+
+
