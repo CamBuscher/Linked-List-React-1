@@ -37,7 +37,7 @@ h1 {
 input {
   width: 90%;
   height: 35px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border: none;
   font-size: 25px;
   padding-left: 10px;
@@ -58,4 +58,19 @@ input::placeholder {
   width: 50%;
   background-color: #CFD8DC;
   vertical-align: top;
+}
+
+#enter-button{
+width: 92%;
+color: #FFFFFF; 
+background-color: #FFC107;
+height: 35px;
+border: none;
+font-weight: 800;
+font-size: 17px;
+}
+
+#main-form{
+  height:301px;
+  margin-top: 50%;
 }
