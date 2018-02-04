@@ -123,11 +123,14 @@ font-weight: 800;
 font-size: 17px;
 }
 
+#enter-button:hover {
+  background-color: #FFD773;
+}
+
 #main-form {
   height:301px;
   margin-top: 50%;
 }
-
 
 .read-button:hover {
 font-weight: 800;
