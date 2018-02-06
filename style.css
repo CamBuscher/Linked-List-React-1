@@ -146,6 +146,10 @@ font-size: 17px;
 
 #enter-button:hover {
   background-color: #FFD773;
+
+}
+#enter-button:disabled {
+  background-color: #CFD8DC
 }
 
 #main-form {

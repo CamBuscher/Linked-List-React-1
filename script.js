@@ -44,4 +44,18 @@ function removeArticle() {
   $(this).closest('article').remove('article');
 }
 
+$('input:text').keyup(function() {
+  $('#enter-button').prop('disabled', checkFields());
+});
 
+function checkFields() {
+  var allFilled = true;
+  $('#enter-button').prop('disabled', false);
+  $('#item-input input:text').each(function()  {
+    if($(this).val() == '') {
+        allFilled = false; 
+        $('#enter-button').prop('disabled', true);
+    }
+  });
+  console.log (allFilled);
+}
