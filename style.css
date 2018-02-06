@@ -78,6 +78,10 @@ hr {
   margin-top: 15px;
 }
 
+.list-item-read {
+  background-color: #F2F4F4;
+}
+
 .read-button {
   border: none;
   color: #455A64;
@@ -86,6 +90,16 @@ hr {
   padding-left: 0px;
   padding-bottom: 0px;
   font-size: 14px;
+}
+
+.read-button-read {
+  border: none;
+  color: #F05A28;
+  font-weight: 800;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  font-size: 14px;
+  background-color: #F2F4F4;
 }
 
 .delete-button {
@@ -99,6 +113,10 @@ hr {
   float: right;
 }
 
+.delete-button-read {
+  background-color: #F2F4F4;
+}
+
 .link-list {
   color: #607d8b;
   text-decoration: underline;
@@ -106,6 +124,9 @@ hr {
   font-size: 22px;
 }
 
+.link-list-read {
+  text-decoration-color: #CFD8DC;
+} 
 
 #list-area {
   width: 50%;
@@ -129,7 +150,7 @@ font-size: 17px;
 
 #main-form {
   height:301px;
-  margin-top: 50%;
+  margin-top: 40%;
 }
 
 .read-button:hover {
