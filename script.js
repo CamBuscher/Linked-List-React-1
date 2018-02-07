@@ -46,6 +46,7 @@ $('#enter-button').on('click', function() {
   addBookmark();
   event.preventDefault();
   $('#item-input').find('input:text, textarea').val('');
+  checkFields();
 });
 
 $('#list-area').on('click', '.read-button', readButtonToggle);
