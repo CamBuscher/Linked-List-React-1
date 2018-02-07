@@ -1,4 +1,6 @@
 var bookmarkCount = 0;
+var unreadCount = 0; 
+var readCount = 0;
 
 function addBookmark() {
   bookmarkCount++;
@@ -12,8 +14,6 @@ function removeBookmark() {
   $('#bookmark-count').text(bookmarkCount);
 };
 
-var unreadCount = 0; 
-
 function addUnread() {
   unreadCount++;
   $('#unread-count').text(unreadCount);
@@ -23,8 +23,6 @@ function removeUnread() {
   unreadCount--;
   $('#unread-count').text(unreadCount);
 };
-
-var readCount = 0;
 
 function listItem (){
   var userTitle = document.querySelector('#user-title').value;
@@ -41,6 +39,26 @@ function listItem (){
     </article>`);
 };
 
+function readButtonToggle() {
+  $(this).closest('article').find('.read-button').toggleClass('read-button-read');
+  $(this).closest('article').toggleClass('list-item-read');
+  $(this).closest('article').find('.delete-button').toggleClass('delete-button-read');
+  $(this).closest('article').find('.link-list').toggleClass('link-list-read');
+};
+
+function removeArticle() {
+  $(this).closest('article').remove('article');
+}
+
+function checkFields() {
+  $('#enter-button').prop('disabled', false);
+  $('#item-input input:text').each(function()  {
+    if($(this).val() == '') {
+        $('#enter-button').prop('disabled', true);
+    }
+  });
+}
+
 $('#enter-button').on('click', function() {
   listItem();
   addBookmark();
@@ -51,33 +69,10 @@ $('#enter-button').on('click', function() {
 
 $('#list-area').on('click', '.read-button', readButtonToggle);
 
-function readButtonToggle() {
-  $(this).closest('article').find('.read-button').toggleClass('read-button-read');
-  $(this).closest('article').toggleClass('list-item-read');
-  $(this).closest('article').find('.delete-button').toggleClass('delete-button-read');
-  $(this).closest('article').find('.link-list').toggleClass('link-list-read');
-};
-
 $('#list-area').on('click', '.delete-button', removeArticle);
 $('#list-area').on('click', '.delete-button', removeBookmark);
 $('#list-area').on('click', '.delete-button', removeUnread);
 
-function removeArticle() {
-  $(this).closest('article').remove('article');
-}
-
 $('input:text').keyup(function() {
   $('#enter-button').prop('disabled', checkFields());
 });
-
-function checkFields() {
-  var allFilled = true;
-  $('#enter-button').prop('disabled', false);
-  $('#item-input input:text').each(function()  {
-    if($(this).val() == '') {
-        allFilled = false; 
-        $('#enter-button').prop('disabled', true);
-    }
-  });
-  console.log (allFilled);
-}
