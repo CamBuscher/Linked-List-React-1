@@ -63,7 +63,7 @@ $('#enter-button').on('click', function() {
   listItem();
   addBookmark();
   event.preventDefault();
-  $('#item-input').find('input:text, textarea').val('');
+  $('#item-input').find('input:text').val('');
   checkFields();
 });
 
