@@ -45,7 +45,6 @@ $('#enter-button').on('click', function() {
   listItem();
   addBookmark();
   event.preventDefault();
-
 });
 
 $('#list-area').on('click', '.read-button', readButtonToggle);
