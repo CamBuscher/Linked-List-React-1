@@ -11,6 +11,39 @@ body{
   margin-bottom: 0px;
 }
 
+h1 {
+  font-weight: bolder;
+  font-size: 60px;
+  color: #fff;
+  margin-bottom: 8%;
+}
+
+h2 {
+  color: #455A64;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+hr {
+  background: #CFD8DC;
+  height: 1px;
+  border: 0px;
+}
+
+input {
+  width: 90%;
+  height: 35px;
+  margin-bottom: 8%;
+  border: none;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+input::placeholder {
+  color: #BBBDBF;
+}
+
 main {
   background-color: #455a64;
   width:  50%;
@@ -27,39 +60,19 @@ section{
   vertical-align: middle;
 }
 
-h1 {
-  font-weight: bolder;
-  font-size: 60px;
-  color: #fff;
-  margin-bottom: 8%;
-}
-
-h2 {
-  color: #455A64;
-  margin-top: 0px;
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-
-input {
-  width: 90%;
-  height: 35px;
-  margin-bottom: 8%;
+.delete-button {
   border: none;
-  font-size: 25px;
-  padding-left: 10px;
+  color: #455A64;
+  text-decoration: underline;
+  text-decoration-color: #F2F4F4;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  font-size: 14px;
+  float: right;
 }
 
-input::placeholder {
-  color: #BBBDBF;
-
-
-}
-
-hr {
-  background: #CFD8DC;
-  height: 1px;
-  border: 0px;
+.delete-button-read {
+  background-color: #F2F4F4;
 }
 
 .logo {
@@ -83,6 +96,17 @@ hr {
   background-color: #F2F4F4;
 }
 
+.link-list {
+  color: #607d8b;
+  text-decoration: underline;
+  text-decoration-color: #F2F4F4;
+  font-size: 22px;
+}
+
+.link-list-read {
+  text-decoration-color: #CFD8DC;
+} 
+
 .read-button {
   border: none;
   color: #455A64;
@@ -103,36 +127,14 @@ hr {
   background-color: #F2F4F4;
 }
 
-.delete-button {
-  border: none;
-  color: #455A64;
-  text-decoration: underline;
-  text-decoration-color: #F2F4F4;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  font-size: 14px;
-  float: right;
+#bookmark-count-container {
+  font-size: 24px;
+  width: 20%;
 }
 
-.delete-button-read {
-  background-color: #F2F4F4;
-}
-
-.link-list {
-  color: #607d8b;
-  text-decoration: underline;
-  text-decoration-color: #F2F4F4;
-  font-size: 22px;
-}
-
-.link-list-read {
-  text-decoration-color: #CFD8DC;
-} 
-
-#list-area {
-  width: 50%;
-  background-color: #CFD8DC;
-  vertical-align: top;
+#counter-container {
+  margin-top: 4%;
+  color: #FFF;
 }
 
 #enter-button {
@@ -153,18 +155,14 @@ font-size: 17px;
   background-color: #CFD8DC
 }
 
+#list-area {
+  width: 50%;
+  background-color: #CFD8DC;
+  vertical-align: top;
+}
+
 #main-form {
   margin-top: 30%;
-}
-
-#counter-container {
-  margin-top: 4%;
-  color: #FFF;
-}
-
-#bookmark-count-container {
-  font-size: 24px;
-  width: 20%;
 }
 
 #small-counter-container {
@@ -187,15 +185,17 @@ font-weight: 800;
 text-decoration-color: #FFC107;
 }
 
+/* First breakpoint */
+
 @media screen and (max-width: 960px) {
+  
   h1 {
     font-size: 40px;
-
   }
+  
   .logo {
     height: 45px;
     width: 45px;
-
   }
 
   #bookmark-count-container {
@@ -207,25 +207,21 @@ text-decoration-color: #FFC107;
   }
 }
 
+/* Second breakpoint */
 
 @media screen and (max-width: 650px) {
+  
   main {
     width: 100%;
   }
+
   section {
     width:100%;
     height: 50vh;
-
   }
 
   input {
     margin-bottom: 5%;
-
-  }
-
-  #main-form {
-    margin-top: 5%;
-
   }
 
   h1{
@@ -242,23 +238,23 @@ text-decoration-color: #FFC107;
     width: 100%;
     overflow: scroll;
   }
-#list-area::-webkit-scrollbar {
+  
+  #list-area::-webkit-scrollbar {
   z-index: -1;
 
   }
   #list-area::-webkit-scrollbar-corner {
     z-index: -5;
   }
-  .read-button {
-    background-color: #FFF;
+
+  #main-form {
+    margin-top: 5%;
   }
+
   .delete-button {
     background-color: #FFF;
   }
   .delete-button-read{
-    background-color: #F2F4F4;
-  }
-  .read-button-read {
     background-color: #F2F4F4;
   }
 
@@ -266,9 +262,11 @@ text-decoration-color: #FFC107;
     font-size: 18px;
   }
 
+  .read-button {
+    background-color: #FFF;
+  }
+
+  .read-button-read {
+    background-color: #F2F4F4;
   }
 }
-}
-}
-
-
