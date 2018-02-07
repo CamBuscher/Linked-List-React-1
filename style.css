@@ -153,8 +153,23 @@ font-size: 17px;
 }
 
 #main-form {
-  height:301px;
-  margin-top: 40%;
+  margin-top: 30%;
+}
+
+#counter-container {
+  margin-top: 4%;
+  color: #FFF;
+}
+
+#bookmark-count-container {
+  font-size: 24px;
+  width: 20%;
+}
+
+#small-counter-container {
+  font-size: 10px;
+  width: 30%; 
+  display: inline-block;
 }
 
 .read-button:hover {
@@ -170,6 +185,7 @@ text-decoration-color: #FFC107;
 font-weight: 800;
 text-decoration-color: #FFC107;
 }
+
 
 
 

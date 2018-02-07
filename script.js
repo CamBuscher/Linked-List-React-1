@@ -1,13 +1,30 @@
-// // <h1 class="important-header">Dinosaurs are awesome.</h1>
+var bookmarkCount = 0;
 
-// // <input class="new-text" value="Wow">
+function addBookmark() {
+  bookmarkCount++;
+  unreadCount++;
+  $('#bookmark-count').text(bookmarkCount);
+  $('#unread-count').text(unreadCount);
+};
 
-// // <button class="change-me">Change Me</button>
+function removeBookmark() {
+  bookmarkCount--;
+  $('#bookmark-count').text(bookmarkCount);
+};
 
+var unreadCount = 0; 
 
+function addUnread() {
+  unreadCount++;
+  $('#unread-count').text(unreadCount);
+};
 
-// // Grab the user input from two i.d's and append them to the list area section upon a button click
+function removeUnread() {
+  unreadCount--;
+  $('#unread-count').text(unreadCount);
+};
 
+var readCount = 0;
 
 function listItem (){
   var userTitle = document.querySelector('#user-title').value;
@@ -26,7 +43,9 @@ function listItem (){
 
 $('#enter-button').on('click', function() {
   listItem();
+  addBookmark();
   event.preventDefault();
+
 });
 
 $('#list-area').on('click', '.read-button', readButtonToggle);
@@ -39,6 +58,8 @@ function readButtonToggle() {
 };
 
 $('#list-area').on('click', '.delete-button', removeArticle);
+$('#list-area').on('click', '.delete-button', removeBookmark);
+$('#list-area').on('click', '.delete-button', removeUnread);
 
 function removeArticle() {
   $(this).closest('article').remove('article');
