@@ -12,11 +12,11 @@
     <section>
       <article id="main-form">
         <h1>Linked <img class="logo" src="images/linked-list-logo.svg" /> List</h1>
-        <form id="item-input">
-          <input id="user-title" type="text" placeholder="Website Title" autocomplete="off"></input>
-          <input id="user-url"type="text" placeholder="Website URL" autocomplete="off"></input>
+        <form id="item-input" aria-label="Two input fields to create a new bookmark.">
+          <input id="user-title" type="text" placeholder="Website Title" autocomplete="off" aria-required="true"></input>
+          <input id="user-url"type="text" placeholder="Website URL" autocomplete="off" aria-required="true"></input>
         </form>
-        <button id="enter-button" type="submit" form="item-input" disabled="true">Enter</button>
+        <button id="enter-button" type="submit" form="item-input" disabled="true" role="button">Enter</button>
       </article>
       <article id="counter-container">
         <span id="bookmark-count-container">
@@ -33,7 +33,7 @@
       </article>
     </section>
   </main>
-  <section id="list-area">
+  <section id="list-area" aria-live="polite">
   </section>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script type="text/javascript" src="script.js"></script>
 </body>
